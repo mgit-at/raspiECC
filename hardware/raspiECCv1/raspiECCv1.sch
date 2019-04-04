@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:raspiECCv1-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -96,20 +97,9 @@ U 1 1 5CA669DA
 P 6750 4150
 F 0 "J1" H 6800 4467 50  0000 C CNN
 F 1 "Raspi" H 6800 4376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 6750 4150 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 6750 4150 50  0001 C CNN
 F 3 "~" H 6750 4150 50  0001 C CNN
 	1    6750 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0104
-U 1 1 5CA67609
-P 7100 3950
-F 0 "#PWR0104" H 7100 3800 50  0001 C CNN
-F 1 "+5V" H 7115 4123 50  0000 C CNN
-F 2 "" H 7100 3950 50  0001 C CNN
-F 3 "" H 7100 3950 50  0001 C CNN
-	1    7100 3950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -181,16 +171,9 @@ Wire Wire Line
 Wire Wire Line
 	4800 4500 4800 4450
 Wire Wire Line
-	7100 3950 7100 4050
-Wire Wire Line
 	6500 4050 6550 4050
 Wire Wire Line
-	7050 4050 7100 4050
-Connection ~ 7100 4050
-Wire Wire Line
-	7100 4050 7100 4150
-Wire Wire Line
-	7050 4150 7100 4150
-Wire Wire Line
 	7050 4250 7100 4250
+NoConn ~ 7050 4050
+NoConn ~ 7050 4150
 $EndSCHEMATC

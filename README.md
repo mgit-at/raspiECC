@@ -3,7 +3,7 @@ raspiECC
 
 A small raspi compatible PCB for the [ATECC608A](https://www.microchip.com/wwwproducts/en/ATECC608A) Security Chip.
 
-
+![raspiECCv1](https://raw.githubusercontent.com/mgit-at/raspiECC/master/raspiECCv1.png)
 
 License
 -------
