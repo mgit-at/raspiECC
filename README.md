@@ -20,7 +20,7 @@ On Raspbian you can use python to test whether the chip works:
 # apt install build-essential python python-pip cmake libudev-dev libusb-1.0-0-dev libffi-dev libssl-dev git
 # git clone https://github.com/MicrochipTech/cryptoauthtools.git
 # cd cryptoauthtools/python/examples
-# pip pip install -r requirements.txt
+# pip install -r requirements.txt
 # python info.py -i i2c
 ```
 
