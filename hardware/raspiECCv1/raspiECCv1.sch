@@ -1,0 +1,196 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "raspiECC v1"
+Date ""
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Security:ATECC608A-SSHDA U1
+U 1 1 5CA5FD02
+P 4800 4150
+F 0 "U1" H 4570 4196 50  0000 R CNN
+F 1 "ATECC608A-SSHDA" H 4570 4105 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4800 4150 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATECC608A-CryptoAuthentication-Device-Summary-Data-Sheet-DS40001977B.pdf" H 4950 4400 50  0001 C CNN
+	1    4800 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CA60171
+P 5550 3800
+F 0 "R2" H 5620 3846 50  0000 L CNN
+F 1 "2k2" H 5620 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5480 3800 50  0001 C CNN
+F 3 "~" H 5550 3800 50  0001 C CNN
+	1    5550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CA60746
+P 5400 3800
+F 0 "R1" H 5250 3850 50  0000 L CNN
+F 1 "2k2" H 5200 3750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5330 3800 50  0001 C CNN
+F 3 "~" H 5400 3800 50  0001 C CNN
+	1    5400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5CA6175B
+P 4800 4500
+F 0 "#PWR0101" H 4800 4250 50  0001 C CNN
+F 1 "GND" H 4805 4327 50  0000 C CNN
+F 2 "" H 4800 4500 50  0001 C CNN
+F 3 "" H 4800 4500 50  0001 C CNN
+	1    4800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5CA61DB9
+P 4800 3450
+F 0 "#PWR0102" H 4800 3300 50  0001 C CNN
+F 1 "+3.3V" H 4815 3623 50  0000 C CNN
+F 2 "" H 4800 3450 50  0001 C CNN
+F 3 "" H 4800 3450 50  0001 C CNN
+	1    4800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5CA622E2
+P 4250 3700
+F 0 "C1" H 4365 3746 50  0000 L CNN
+F 1 "C" H 4365 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4288 3550 50  0001 C CNN
+F 3 "~" H 4250 3700 50  0001 C CNN
+	1    4250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5CA65758
+P 4250 3900
+F 0 "#PWR0103" H 4250 3650 50  0001 C CNN
+F 1 "GND" H 4255 3727 50  0000 C CNN
+F 2 "" H 4250 3900 50  0001 C CNN
+F 3 "" H 4250 3900 50  0001 C CNN
+	1    4250 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 5CA669DA
+P 6750 4150
+F 0 "J1" H 6800 4467 50  0000 C CNN
+F 1 "Raspi" H 6800 4376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 6750 4150 50  0001 C CNN
+F 3 "~" H 6750 4150 50  0001 C CNN
+	1    6750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5CA67609
+P 7100 3950
+F 0 "#PWR0104" H 7100 3800 50  0001 C CNN
+F 1 "+5V" H 7115 4123 50  0000 C CNN
+F 2 "" H 7100 3950 50  0001 C CNN
+F 3 "" H 7100 3950 50  0001 C CNN
+	1    7100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5CA6809F
+P 7100 4300
+F 0 "#PWR0105" H 7100 4050 50  0001 C CNN
+F 1 "GND" H 7105 4127 50  0000 C CNN
+F 2 "" H 7100 4300 50  0001 C CNN
+F 3 "" H 7100 4300 50  0001 C CNN
+	1    7100 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 5CA6847D
+P 6500 3950
+F 0 "#PWR0106" H 6500 3800 50  0001 C CNN
+F 1 "+3.3V" H 6515 4123 50  0000 C CNN
+F 2 "" H 6500 3950 50  0001 C CNN
+F 3 "" H 6500 3950 50  0001 C CNN
+	1    6500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4250 7100 4300
+Wire Wire Line
+	6500 3950 6500 4050
+Wire Wire Line
+	5100 4250 5400 4250
+Wire Wire Line
+	5100 4050 5550 4050
+Wire Wire Line
+	5550 4050 5550 4150
+Wire Wire Line
+	5550 4150 6550 4150
+Wire Wire Line
+	5550 4050 5550 3950
+Connection ~ 5550 4050
+Wire Wire Line
+	5400 3950 5400 4250
+Connection ~ 5400 4250
+Wire Wire Line
+	5400 4250 6550 4250
+Text Label 6500 4150 2    50   ~ 0
+SDA
+Text Label 6500 4250 2    50   ~ 0
+SCL
+Wire Wire Line
+	4250 3900 4250 3850
+Wire Wire Line
+	4250 3550 4250 3500
+Wire Wire Line
+	4250 3500 4800 3500
+Wire Wire Line
+	5400 3500 5400 3650
+Wire Wire Line
+	5400 3500 5550 3500
+Wire Wire Line
+	5550 3500 5550 3650
+Connection ~ 5400 3500
+Wire Wire Line
+	4800 3500 4800 3450
+Connection ~ 4800 3500
+Wire Wire Line
+	4800 3500 5400 3500
+Wire Wire Line
+	4800 3500 4800 3850
+Wire Wire Line
+	4800 4500 4800 4450
+Wire Wire Line
+	7100 3950 7100 4050
+Wire Wire Line
+	6500 4050 6550 4050
+Wire Wire Line
+	7050 4050 7100 4050
+Connection ~ 7100 4050
+Wire Wire Line
+	7100 4050 7100 4150
+Wire Wire Line
+	7050 4150 7100 4150
+Wire Wire Line
+	7050 4250 7100 4250
+$EndSCHEMATC
