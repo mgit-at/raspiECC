@@ -1,15 +1,20 @@
 raspiECC
 ========
 
-A small raspi compatible PCB for the [ATECC608A](https://www.microchip.com/wwwproducts/en/ATECC608A) Security Chip.
+A small RaspberryPI compatible PCB for the [ATECC608A](https://www.microchip.com/wwwproducts/en/ATECC608A) Security Chip.
 
 ![raspiECCv1](https://raw.githubusercontent.com/mgit-at/raspiECC/master/raspiECCv1.png)
 
-Preperations
+Preparations
 ------------
 
-First you have to enable the I²C interface on the RaspberryPI. On Raspbian you can do this by adding or uncommenting the line `dtparam=i2c_arm=on` inside the file `/boot/config.txt`. You then have to enable to `i2c-dev` module either using `raspi-config` or by adding the line `i2c-dev` to `/etc/modules`. After doing this you have to reboot.
-If you want to access the I²C inteface using a non-root user you also need to add the user to the group `i2c` by running the command `adduser <username> i2c`.
+First you have to enable the I²C interface on the RaspberryPI. On Raspbian you can do this following these steps:
+
+* add or uncomment the line `dtparam=i2c_arm=on` inside the file `/boot/config.txt`
+* enable the `i2c-dev` module using `raspi-config` or by adding the line `i2c-dev` to `/etc/modules`
+* reboot
+
+If you want to access the I²C interface using a non-root user you also need to add this user to the group `i2c` by running the command `adduser <username> i2c`.
 
 Testing
 -------
