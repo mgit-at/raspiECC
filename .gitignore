@@ -1,2 +1,3 @@
 /hardware/*/*.kicad_pcb-bak
 /hardware/*/*.bak
+/hardware/*/fp-info-cache
