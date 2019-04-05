@@ -1,4 +1,4 @@
-15815861796091696
+15817416257817442
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -62313,6 +62313,13 @@ Potentiometer vertical Vishay T73YP
 0
 3
 3
+raspiECC
+mgit-logo
+
+
+0
+0
+0
 Relay_SMD
 Relay_DPDT_AXICOM_IMSeries_JLeg
 http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Specification+Or+Standard%7F108-98001%7FW5%7Fpdf%7FEnglish%7FENG_SS_108-98001_W5.pdf
